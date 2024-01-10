@@ -5,14 +5,13 @@ import "@/ui/globals.css";
 import Header from "@/ui/components/header/Header";
 import Providers from "@/ui/components/Providers";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Footer from "@/ui/components/footer/Footer";
 import { usePathname } from "next/navigation";
 
 const variants = {
-  hidden: { opacity: 0, x: -200, y: 0 },
+  hidden: { opacity: 0, x: -100, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
-  // exitState: { opacity: 0, x: 0, y: -50 },
 };
 
 export default function RootLayout({
@@ -37,9 +36,11 @@ export default function RootLayout({
               animate="enter"
               variants={variants}
               transition={{
-                type: "linear",
-                duration: 0.2,
+                duration: 0.3,
+                type: "tween",
+                ease: [0.31, 1.06, 0.66, 0.94],
               }}
+              className="flex min-h-screen flex-col px-8 text-foreground md:px-[150px] lg:px-[250px] xl:px-[375px] 2xl:px-[400px] 3xl:px-[640px]"
             >
               {children}
             </motion.main>
