@@ -8,7 +8,7 @@ const links = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
   { name: "Writing", href: "/writing" },
-  { name: "Resume", href: "/resume" },
+  { name: "CV", href: "/cv" },
 ];
 
 export default function NavLinks() {

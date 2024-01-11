@@ -7,7 +7,6 @@ export default function Profile() {
       <div className="w-[250px] flex-auto rounded-full border-[14px] border-background drop-shadow-[0px_0px_10px_rgba(0,0,0,0.25)] md:w-[500px]">
         <Image
           src="/profile.jpg"
-          layout="responsive"
           width={900}
           height={900}
           alt="Profile picture"
