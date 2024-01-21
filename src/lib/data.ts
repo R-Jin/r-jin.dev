@@ -1,17 +1,11 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { PostData } from "./definitions";
 
 const postsDirectory = path.join(process.cwd(), "content/posts/public");
 
-type PostInfo = {
-  id: string;
-  title: string;
-  description: string;
-  date: Date | string;
-};
-
-function getPostInfo(filename: string): PostInfo {
+function getPostData(filename: string): PostData {
   // ID for the posts
   const id = filename.replace(/\.md$/, "");
 
@@ -27,10 +21,10 @@ function getPostInfo(filename: string): PostInfo {
   };
 }
 
-export function getAllPostsInfo() {
+export function getAllPostsData() {
   const filenames = fs.readdirSync(postsDirectory);
 
-  const allPostsData = filenames.map((filename) => getPostInfo(filename));
+  const allPostsData = filenames.map((filename) => getPostData(filename));
 
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {

@@ -1,5 +1,6 @@
-import { getAllPostsInfo } from "@/lib/data";
+import { getAllPostsData } from "@/lib/data";
 import { Metadata } from "next";
+import PostsList from "@/ui/components/posts/PostsList";
 
 export const metadata: Metadata = {
   title: "Writings",
@@ -8,17 +9,18 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const postsInfo = getAllPostsInfo();
+  const postsData = getAllPostsData();
 
   return (
     <main>
       <h1 className="mt-20 text-3xl font-extrabold md:mt-20 md:text-6xl">
-        Writing
+        Writings
       </h1>
-      <p className="mt-5 font-serif text-lg md:text-2xl">
+      <p className="mb-10 mt-5 font-serif text-lg md:text-2xl">
         Here I will write about anything I find interesting throughout my
         day-to-day life.
       </p>
+      <PostsList postsData={postsData} />
     </main>
   );
 }
