@@ -1,12 +1,15 @@
+import { getAllPostsInfo } from "@/lib/data";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Writing",
+  title: "Writings",
   description:
     "Here I will write about anything I find interesting throughout my day-to-day life.",
 };
 
 export default function Page() {
+  const postsInfo = getAllPostsInfo();
+
   return (
     <main>
       <h1 className="mt-20 text-3xl font-extrabold md:mt-20 md:text-6xl">
