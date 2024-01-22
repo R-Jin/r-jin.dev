@@ -1,11 +1,10 @@
 ---
-title: 'Game of Life'
-metaTitle: 'Boids'
-metaDesc: "John Conways's cellular automaton"
-date: '2021-08-26'
-tags: 
-    - Python
-    - Pygame
+title: "Game of Life"
+description: "John Conways's cellular automaton"
+date: "2021-08-26"
+tags:
+  - Python
+  - Pygame
 ---
 
 The Game of Life is a cellular automaton simulation created by mathematician John Conway in 1970.
@@ -15,7 +14,7 @@ It simulates the birth, death and survival of cells on a grid.
 
 # How it works
 
-The rules are: 
+The rules are:
 
 - Any live cell with fewer than two live neighbors dies, as if by underpopulation.
 - Any live cell with two or three live neighbors lives on to the next generation.
