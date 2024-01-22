@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const latestPosts = getLatestPostsData(3);
+  const latestPosts = getLatestPostsData(1);
   return (
     <>
       <Profile />
@@ -24,8 +24,10 @@ export default function Page() {
           of computer science.
         </p>
       </div>
-      <h1 className="mb-10 font-sans text-4xl font-bold">Latest Posts</h1>
+      <h1 className="font-sans text-4xl font-bold">Latest Posts</h1>
       <PostsList postsData={latestPosts} />
+
+      <h1 className="my-6 font-sans text-4xl font-bold">Featured Projects</h1>
     </>
   );
 }

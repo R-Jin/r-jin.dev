@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function PostListItem({ postData }: { postData: PostData }) {
   return (
     <Link href={`writings/${postData.id}`}>
-      <li>
+      <li className="border-b-[1px] border-foreground/30 py-8">
         <h1 className="font-sans text-2xl font-extrabold text-accent">
           {postData.title}
         </h1>
@@ -14,7 +14,6 @@ export default function PostListItem({ postData }: { postData: PostData }) {
         </p>
         <p className="font-serif text-base">{postData.description}</p>
       </li>
-      <hr className="my-8 border-foreground/30" />
     </Link>
   );
 }
