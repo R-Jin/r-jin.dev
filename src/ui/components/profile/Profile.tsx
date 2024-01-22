@@ -3,7 +3,7 @@ import Socials from "../Socials";
 
 export default function Profile() {
   return (
-    <div className="flex flex-col items-center space-y-10 pt-10 md:flex-row md:space-x-[50px] md:space-y-0 md:pt-28">
+    <div className="flex flex-col items-center space-y-10 md:flex-row md:space-x-[50px] md:space-y-0">
       <div className="w-[250px] flex-auto rounded-full border-[14px] border-background drop-shadow-[0px_0px_10px_rgba(0,0,0,0.25)] md:w-[500px]">
         <Image
           src="/profile.jpg"

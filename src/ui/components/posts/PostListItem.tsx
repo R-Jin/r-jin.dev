@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function PostListItem({ postData }: { postData: PostData }) {
   return (
     <Link href={`writings/${postData.id}`}>
-      <li className="border-b-[1px] border-foreground/30 py-8">
+      <li className="border-b-[1px] border-foreground/30 px-4 py-8 hover:bg-foreground/5 active:bg-foreground/10">
         <h1 className="font-sans text-2xl font-extrabold text-accent">
           {postData.title}
         </h1>
