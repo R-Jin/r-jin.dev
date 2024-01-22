@@ -34,3 +34,7 @@ export function getAllPostsData() {
     }
   });
 }
+
+export function getLatestPostsData(number: number) {
+  return getAllPostsData().slice(0, number);
+}
