@@ -2,6 +2,7 @@
 title: "Taoslab.org"
 description: "Research website for the Dept. of Rheumatology and Inflammation research team"
 date: "2021-02-14"
+thumbnail: "taoslab.png"
 tags:
   - HTML
   - CSS

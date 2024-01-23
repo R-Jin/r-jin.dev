@@ -2,6 +2,7 @@
 title: "Game of Life"
 description: "John Conways's cellular automaton"
 date: "2021-08-26"
+thumbnail: "game_of_life.png"
 tags:
   - Python
   - Pygame
