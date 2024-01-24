@@ -1,17 +1,24 @@
-import { getAllProjectPages } from "@/lib/data";
+import { getAllProjectSlugs, getProjectPage } from "@/lib/data";
 import { format } from "date-fns";
 
 export default function Page({ params }: { params: { slug: string } }) {
-  return <div>My Post: {params.slug}</div>;
+  const pageData = getProjectPage(`${params.slug}.md`);
+  return (
+    <>
+      <h1 className="mt-10 font-sans text-3xl font-extrabold md:text-4xl">
+        {pageData.title}
+      </h1>
+      <p className="mt-2 font-serif">
+        {format(new Date(pageData.date), "do MMMM yyyy")}
+      </p>
+    </>
+  );
 }
 
 export function generateStaticParams() {
-  const posts = getAllProjectPages();
+  const posts = getAllProjectSlugs();
 
-  return posts.map((post) => ({
-    slug: post.id,
-    title: post.title,
-    date: format(post.date, "do MMMM yyyy"),
-    content: post.content,
+  return posts.map((slug) => ({
+    slug,
   }));
 }

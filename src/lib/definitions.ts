@@ -15,7 +15,6 @@ export type ProjectData = {
 };
 
 export type PageData = {
-  id: string;
   title: string;
   date: Date | string;
   content: string;

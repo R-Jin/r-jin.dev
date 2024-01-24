@@ -6,33 +6,26 @@ import { PostData, ProjectData, PageData } from "./definitions";
 const postsDirectory = path.join(process.cwd(), "content/posts/public");
 
 function getPageData(filename: string, directory: string): PageData {
-  const id = filename.replace(/\.md$/, "");
-
   const fullPath = path.join(directory, filename);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   const pageData = matter(fileContents);
   return {
-    id,
     title: pageData.data.title || "",
     date: new Date(pageData.data.date) || "",
     content: pageData.content,
   };
 }
 
-export function getAllPostPages(): PageData[] {
-  const filenames = fs.readdirSync(postsDirectory);
-  const allPostPages = filenames.map((filename) =>
-    getPageData(filename, postsDirectory),
-  );
+export function getPostPage(filename: string) {
+  return getPageData(filename, postsDirectory);
+}
 
-  return allPostPages.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+export function getAllPostSlugs() {
+  const filenames = fs.readdirSync(postsDirectory);
+  const slugs = filenames.map((filename) => filename.replace(/\.md$/, ""));
+
+  return slugs;
 }
 
 function getPostData(filename: string): PostData {
@@ -73,7 +66,6 @@ function getProjectsData(filename: string, directory: string): ProjectData {
   // ID for the posts
   const id = filename.replace(/\.md$/, "");
 
-  const thumbnailPath = path.join(process.cwd(), "public/thumbnails");
   const fullPath = path.join(directory, filename);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
@@ -139,4 +131,15 @@ export function getAllProjectPages(): PageData[] {
       return -1;
     }
   });
+}
+
+export function getAllProjectSlugs() {
+  const filenames = fs.readdirSync(projectsDirectory);
+  const slugs = filenames.map((filename) => filename.replace(/\.md$/, ""));
+
+  return slugs;
+}
+
+export function getProjectPage(filename: string) {
+  return getPageData(filename, projectsDirectory);
 }
