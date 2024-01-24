@@ -15,13 +15,12 @@ function getPageData(filename: string, directory: string): PageData {
   return {
     id,
     title: pageData.data.title || "",
-    description: pageData.data.description || "",
     date: new Date(pageData.data.date) || "",
     content: pageData.content,
   };
 }
 
-function getAllPostPages() {
+export function getAllPostPages(): PageData[] {
   const filenames = fs.readdirSync(postsDirectory);
   const allPostPages = filenames.map((filename) =>
     getPageData(filename, postsDirectory),
@@ -89,9 +88,9 @@ function getProjectsData(filename: string, directory: string): ProjectData {
   };
 }
 
-export function getAllProjectsData(): ProjectData[] {
-  const projectsDirectory = path.join(process.cwd(), "content/projects/public");
+const projectsDirectory = path.join(process.cwd(), "content/projects/public");
 
+export function getAllProjectsData(): ProjectData[] {
   const filenames = fs.readdirSync(projectsDirectory);
 
   const allProjectsData = filenames.map((filename) =>
@@ -119,6 +118,21 @@ export function getFeaturedProjectsData(): ProjectData[] {
   );
 
   return featuredProjectsData.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+}
+
+export function getAllProjectPages(): PageData[] {
+  const filenames = fs.readdirSync(projectsDirectory);
+  const allProjectPages = filenames.map((filename) =>
+    getPageData(filename, projectsDirectory),
+  );
+
+  return allProjectPages.sort((a, b) => {
     if (a.date < b.date) {
       return 1;
     } else {
