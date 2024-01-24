@@ -13,3 +13,11 @@ export type ProjectData = {
   thumbnail: string;
   tags: string[];
 };
+
+export type PageData = {
+  id: string;
+  title: string;
+  description: string;
+  date: Date | string;
+  content: string;
+};

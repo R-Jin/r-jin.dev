@@ -1,9 +1,40 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { PostData, ProjectData } from "./definitions";
+import { PostData, ProjectData, PageData } from "./definitions";
 
 const postsDirectory = path.join(process.cwd(), "content/posts/public");
+
+function getPageData(filename: string, directory: string): PageData {
+  const id = filename.replace(/\.md$/, "");
+
+  const fullPath = path.join(directory, filename);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+
+  const pageData = matter(fileContents);
+  return {
+    id,
+    title: pageData.data.title || "",
+    description: pageData.data.description || "",
+    date: new Date(pageData.data.date) || "",
+    content: pageData.content,
+  };
+}
+
+function getAllPostPages() {
+  const filenames = fs.readdirSync(postsDirectory);
+  const allPostPages = filenames.map((filename) =>
+    getPageData(filename, postsDirectory),
+  );
+
+  return allPostPages.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+}
 
 function getPostData(filename: string): PostData {
   // ID for the posts
@@ -21,7 +52,7 @@ function getPostData(filename: string): PostData {
   };
 }
 
-export function getAllPostsData() {
+export function getAllPostsData(): PostData[] {
   const filenames = fs.readdirSync(postsDirectory);
 
   const allPostsData = filenames.map((filename) => getPostData(filename));
@@ -35,11 +66,11 @@ export function getAllPostsData() {
   });
 }
 
-export function getLatestPostsData(number: number) {
+export function getLatestPostsData(number: number): PostData[] {
   return getAllPostsData().slice(0, number);
 }
 
-function getProjectsData(filename: string, directory: string) {
+function getProjectsData(filename: string, directory: string): ProjectData {
   // ID for the posts
   const id = filename.replace(/\.md$/, "");
 
@@ -58,7 +89,7 @@ function getProjectsData(filename: string, directory: string) {
   };
 }
 
-export function getAllProjectsData() {
+export function getAllProjectsData(): ProjectData[] {
   const projectsDirectory = path.join(process.cwd(), "content/projects/public");
 
   const filenames = fs.readdirSync(projectsDirectory);
@@ -76,7 +107,7 @@ export function getAllProjectsData() {
   });
 }
 
-export function getFeaturedProjectsData() {
+export function getFeaturedProjectsData(): ProjectData[] {
   const featuredProjectsDirectory = path.join(
     process.cwd(),
     "content/projects/featured",
