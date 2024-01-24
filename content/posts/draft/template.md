@@ -1,5 +1,5 @@
 ---
-title: "Advent of Code 2022"
-description: "Coding challenges everyday until christmas day!"
+title: "template"
+description: "description"
 date: "2022-12-01"
 ---

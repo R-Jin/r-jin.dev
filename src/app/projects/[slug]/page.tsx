@@ -1,5 +1,6 @@
 import { getAllProjectSlugs, getProjectPage } from "@/lib/data";
 import { format } from "date-fns";
+import Content from "@/ui/components/markdown/Content";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const pageData = getProjectPage(`${params.slug}.md`);
@@ -11,6 +12,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       <p className="mt-2 font-serif">
         {format(new Date(pageData.date), "do MMMM yyyy")}
       </p>
+      <Content content={pageData.content} />
     </>
   );
 }
