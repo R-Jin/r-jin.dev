@@ -9,7 +9,7 @@ export default function ProjectListItem({
   projectData: ProjectData;
 }) {
   return (
-    <Link href={`writings/${projectData.id}`}>
+    <Link href={`projects/${projectData.id}`}>
       <li className="flex border-b-[1px] border-foreground/30 px-4 py-8 hover:bg-foreground/5 active:bg-foreground/10 md:flex-row md:space-x-8">
         <div className="hidden min-w-[200px] md:block">
           <Image
