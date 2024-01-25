@@ -6,7 +6,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const pageData = getPostPage(`${params.slug}.md`);
   return (
     <>
-      <h1 className="mt-10 font-sans text-3xl font-extrabold md:text-4xl">
+      <h1 className="mt-10 font-sans text-3xl font-extrabold text-accent md:text-4xl">
         {pageData.title}
       </h1>
       <p className="mt-2 font-serif">
