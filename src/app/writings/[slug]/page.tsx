@@ -9,7 +9,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       <h1 className="mt-10 font-sans text-3xl font-extrabold text-accent md:text-4xl">
         {pageData.title}
       </h1>
-      <p className="mt-2 font-serif">
+      <p className="mb-4 mt-2 font-serif">
         {format(new Date(pageData.date), "do MMMM yyyy")}
       </p>
       <Content content={pageData.content} />

@@ -1,4 +1,3 @@
-import { Ultra } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -43,8 +42,8 @@ const config: Config = {
             "--tw-prose-quote-borders": "rgba(var(--color-accent))",
             "--tw-prose-captions": "rgba(var(--color-foreground))",
             "--tw-prose-code": "rgba(var(--color-foreground))",
-            // '--tw-prose-pre-code': theme('colors.pink[100]'),
-            // '--tw-prose-pre-bg': theme('colors.pink[900]'),
+            "--tw-prose-pre-code": "rgba(var(--color-background))",
+            "--tw-prose-pre-bg": "rgba(var(--color-background))",
 
             // Links
             a: {
@@ -58,7 +57,8 @@ const config: Config = {
             // Images
             img: {
               display: "block",
-              // borderRadius: "10px",
+              borderRadius: "10px",
+              margin: "0px",
               width: "100%",
             },
 

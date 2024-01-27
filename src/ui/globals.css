@@ -20,6 +20,9 @@
   /* Table */
   --color-table-border: 51, 46, 60;
   --color-table-dark-background: 235, 232, 235;
+
+  /* Code */
+  --color-code-block-background: 40, 44, 52;
 }
 
 .dark {
@@ -40,4 +43,7 @@
   /* Table */
   --color-table-border: 76, 78, 110;
   --color-table-dark-background: 31, 32, 46;
+
+  /* Code */
+  --color-code-block-background: 40, 44, 52;
 }
