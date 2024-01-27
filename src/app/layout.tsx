@@ -27,6 +27,9 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
+        <header>
+          <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+        </header>
         <Providers>
           <div className="bg-background transition-colors duration-200 ease-linear">
             <Header />
