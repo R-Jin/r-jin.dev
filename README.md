@@ -1,2 +1,3 @@
 # r-jin.dev
-Rewritten personal website. Old website here [r-jin.dev_old](https://github.com/R-Jin/r-jin.dev_old)
+
+My current personal website written using the React.js framework Next.js with Typescript and Tailwind CSS.
