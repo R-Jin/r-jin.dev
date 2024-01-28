@@ -17,8 +17,11 @@ export default function Page({ params }: { params: { slug: string } }) {
   );
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const posts = getAllPostSlugs();
+  console.log(posts);
 
   return posts.map((slug) => ({
     slug,

@@ -17,6 +17,8 @@ export default function Page({ params }: { params: { slug: string } }) {
   );
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const posts = getAllProjectSlugs();
 

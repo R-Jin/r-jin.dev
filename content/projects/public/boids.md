@@ -3,7 +3,6 @@ title: "Boids"
 description: "Boids simulation"
 date: "2022-08-27"
 thumbnail: "boids.png"
-draft: true
 tags:
   - Python
   - Pygame

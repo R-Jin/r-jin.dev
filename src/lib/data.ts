@@ -22,8 +22,14 @@ export function getPostPage(filename: string) {
 }
 
 export function getAllPostSlugs() {
-  const filenames = fs.readdirSync(postsDirectory);
-  const slugs = filenames.map((filename) => filename.replace(/\.md$/, ""));
+  const filenames: any = fs.readdirSync(postsDirectory);
+  const slugs = filenames.reduce((filtered: string[], filename: string) => {
+    const postData = getPostData(filename);
+    if (!postData.draft) {
+      filtered.push(filename.replace(/\.md$/, ""));
+    }
+    return filtered;
+  }, []);
 
   return slugs;
 }
@@ -152,8 +158,16 @@ export function getAllProjectPages(): PageData[] {
 }
 
 export function getAllProjectSlugs() {
-  const filenames = fs.readdirSync(projectsDirectory);
-  const slugs = filenames.map((filename) => filename.replace(/\.md$/, ""));
+  const filenames: any = fs.readdirSync(projectsDirectory);
+  // const slugs = filenames.map((filename) => filename.replace(/\.md$/, ""));
+
+  const slugs = filenames.reduce((filtered: string[], filename: string) => {
+    const projectData = getProjectsData(filename, projectsDirectory);
+    if (!projectData.draft) {
+      filtered.push(filename.replace(/\.md$/, ""));
+    }
+    return filtered;
+  }, []);
 
   return slugs;
 }
