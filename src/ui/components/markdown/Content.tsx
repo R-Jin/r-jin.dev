@@ -31,17 +31,19 @@ const customComponents = {
   code(props: any) {
     const { children, className, node, ...rest } = props;
     const match = /language-(\w+)/.exec(className || "");
+    const content = String(children).replace(/\n$/, "");
     return match ? (
       <SyntaxHighlighter
         {...rest}
         wrapLongLines={true}
         PreTag="div"
+        children={content}
         language={match[1]}
         style={oneDark}
       />
     ) : (
       <code {...rest} className={className}>
-        {String(children).replace(/\n$/, "")}
+        {children}
       </code>
     );
   },
