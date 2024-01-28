@@ -3,6 +3,7 @@ export type PostData = {
   title: string;
   description: string;
   date: Date | string;
+  draft: boolean;
 };
 
 export type ProjectData = {
@@ -12,6 +13,7 @@ export type ProjectData = {
   date: Date | string;
   thumbnail: string;
   tags: string[];
+  draft: boolean;
 };
 
 export type PageData = {
