@@ -36,13 +36,12 @@ const customComponents = {
         {...rest}
         wrapLongLines={true}
         PreTag="div"
-        children={[String(children).replace(/\n$/, "")]}
         language={match[1]}
         style={oneDark}
       />
     ) : (
       <code {...rest} className={className}>
-        {children}
+        {String(children).replace(/\n$/, "")}
       </code>
     );
   },
