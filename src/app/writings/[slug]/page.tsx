@@ -21,7 +21,6 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   const posts = getAllPostSlugs();
-  console.log(posts);
 
   return posts.map((slug) => ({
     slug,
