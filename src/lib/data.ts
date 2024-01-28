@@ -41,15 +41,25 @@ function getPostData(filename: string): PostData {
     title: postInfo.title || "",
     description: postInfo.description || "",
     date: new Date(postInfo.date) || "",
+    draft: postInfo.draft || false,
   };
 }
 
 export function getAllPostsData(): PostData[] {
-  const filenames = fs.readdirSync(postsDirectory);
+  const filenames: any = fs.readdirSync(postsDirectory);
 
-  const allPostsData = filenames.map((filename) => getPostData(filename));
+  const allPostsData = filenames.reduce(
+    (filtered: PostData[], filename: string) => {
+      const postData = getPostData(filename);
+      if (!postData.draft) {
+        filtered.push(postData);
+      }
+      return filtered;
+    },
+    [],
+  );
 
-  return allPostsData.sort((a, b) => {
+  return allPostsData.sort((a: PostData, b: PostData) => {
     if (a.date < b.date) {
       return 1;
     } else {
@@ -77,19 +87,27 @@ function getProjectsData(filename: string, directory: string): ProjectData {
     date: new Date(projectsInfo.date) || "",
     thumbnail: `/thumbnails/${projectsInfo.thumbnail}` || "",
     tags: projectsInfo.tags || [],
+    draft: projectsInfo.draft || false,
   };
 }
 
 const projectsDirectory = path.join(process.cwd(), "content/projects/public");
 
 export function getAllProjectsData(): ProjectData[] {
-  const filenames = fs.readdirSync(projectsDirectory);
+  const filenames: any = fs.readdirSync(projectsDirectory);
 
-  const allProjectsData = filenames.map((filename) =>
-    getProjectsData(filename, projectsDirectory),
+  const allProjectsData = filenames.reduce(
+    (filtered: ProjectData[], filename: string) => {
+      const projectData = getProjectsData(filename, projectsDirectory);
+      if (!projectData.draft) {
+        filtered.push(projectData);
+      }
+      return filtered;
+    },
+    [],
   );
 
-  return allProjectsData.sort((a, b) => {
+  return allProjectsData.sort((a: ProjectData, b: ProjectData) => {
     if (a.date < b.date) {
       return 1;
     } else {
