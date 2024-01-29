@@ -1,6 +1,6 @@
 ---
 title: "Binary heap, heapsort and priority queues"
-description: "A explanation of the heap datastructure and its use cases"
+description: "An explanation of the heap datastructure and its use cases"
 date: "2024-01-29"
 # draft: true
 ---
