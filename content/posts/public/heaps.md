@@ -2,7 +2,6 @@
 title: "Binary heap, heapsort and priority queues"
 description: "An explanation of the heap datastructure and its use cases"
 date: "2024-01-29"
-# draft: true
 ---
 
 In general the heap is a tree data structure. There are two different types of heaps, **min-heap** and **max-heap**.
