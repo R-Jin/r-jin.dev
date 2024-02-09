@@ -1,5 +1,5 @@
 ---
-title: "Data visualization using Python"
+title: "Data visualization"
 description: "Good standard practices to follow when visualizing data"
 date: "2024-01-27"
 ---
