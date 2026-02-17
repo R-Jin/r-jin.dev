@@ -1,0 +1,328 @@
+/*
+ * Tokyo Night Color Theme for Hugo PaperMod
+ * Based on: https://github.com/tokyo-night/tokyo-night-vscode-theme
+ * 
+ * This file overrides PaperMod's default color variables with
+ * the official Tokyo Night color palette.
+ */
+
+/* ==========================================
+ * TOKYO NIGHT - Dark Mode (Default)
+ * ========================================== */
+:root,
+:root[data-theme="dark"] {
+    /* Background Colors */
+    --theme: rgb(26, 27, 38) !important;           /* #1a1b26 - Main background (Tokyo Night) */
+    --entry: rgb(36, 40, 59) !important;           /* #24283b - Card/entry background (Storm) */
+    
+    /* Text Colors */
+    --primary: rgb(192, 202, 245) !important;      /* #c0caf5 - Primary text/headings */
+    --secondary: rgb(154, 165, 206) !important;    /* #9aa5ce - Secondary text/metadata */
+    --tertiary: rgb(86, 95, 137) !important;       /* #565f89 - Tertiary/muted elements */
+    --content: rgb(169, 177, 214) !important;      /* #a9b1d6 - Main content text */
+    
+    /* Code Colors */
+    --code-bg: rgb(36, 40, 59) !important;         /* #24283b - Inline code background */
+    --code-block-bg: rgb(26, 27, 38) !important;   /* #1a1b26 - Code block background */
+    
+    /* UI Elements */
+    --border: rgb(65, 72, 104) !important;         /* #414868 - Borders and dividers */
+    
+    /* Link and Accent Colors - Tokyo Night Blue */
+    --link-color: rgb(122, 162, 247);   /* #7aa2f7 - Links */
+    --link-hover: rgb(125, 207, 255);   /* #7dcfff - Link hover (cyan) */
+    
+    /* Additional Tokyo Night Accent Colors */
+    --tn-purple: rgb(187, 154, 247);    /* #bb9af7 - Purple accent */
+    --tn-cyan: rgb(125, 207, 255);      /* #7dcfff - Cyan accent */
+    --tn-green: rgb(158, 206, 106);     /* #9ece6a - Green accent */
+    --tn-yellow: rgb(224, 175, 104);    /* #e0af68 - Yellow accent */
+    --tn-orange: rgb(255, 158, 100);    /* #ff9e64 - Orange accent */
+    --tn-red: rgb(247, 118, 142);       /* #f7768e - Red accent */
+    --tn-teal: rgb(115, 218, 202);      /* #73daca - Teal accent */
+}
+
+/* Customize specific elements with Tokyo Night accents */
+:root {
+    /* Headings use purple accent */
+    --heading-color: var(--tn-purple);
+    
+    /* Selection color */
+    --selection-bg: rgb(56, 62, 90);    /* #383e5a - Text selection */
+    --selection-fg: var(--primary);
+}
+
+/* Selection styling */
+::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-fg);
+}
+
+/* Links with Tokyo Night colors */
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/* Code highlighting with Tokyo Night colors */
+code {
+    background: var(--code-bg);
+    color: var(--tn-cyan);
+}
+
+/* Inline code styling */
+:not(pre) > code {
+    color: var(--tn-teal);
+}
+
+/* Buttons and interactive elements */
+button,
+.button {
+    background: var(--entry);
+    color: var(--primary);
+    border-color: var(--border);
+}
+
+button:hover,
+.button:hover {
+    background: var(--tertiary);
+    border-color: var(--tn-purple);
+}
+
+/* Theme toggle button - remove background highlight */
+button#theme-toggle {
+    background: transparent !important;
+    color: var(--primary);
+    border: none;
+    box-shadow: none;
+    outline: none;
+    transition: color 0.2s ease;
+}
+
+/* Sun icon (dark mode) - yellow on hover */
+[data-theme="dark"] button#theme-toggle:hover {
+    background: transparent !important;
+    color: var(--tn-yellow) !important;
+}
+
+/* Moon icon (light mode) - same as R-Jin header hover */
+[data-theme="light"] button#theme-toggle:hover {
+    background: transparent !important;
+    color: var(--link-hover) !important;  /* Same as header link hover #0f4b6e */
+}
+
+button#theme-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* ==========================================
+ * TOKYO NIGHT LIGHT - Light Mode
+ * ========================================== */
+:root[data-theme="light"] {
+    /* Background Colors */
+    --theme: rgb(230, 231, 237) !important;        /* #e6e7ed - Main background (Light) */
+    --entry: rgb(213, 214, 221) !important;        /* #d5d6dd - Card/entry background */
+    
+    /* Text Colors */
+    --primary: rgb(52, 59, 88) !important;         /* #343b58 - Primary text/headings */
+    --secondary: rgb(108, 110, 117) !important;    /* #6c6e75 - Secondary text/metadata */
+    --tertiary: rgb(180, 182, 190) !important;     /* #b4b6be - Tertiary/muted elements */
+    --content: rgb(64, 67, 79) !important;         /* #40434f - Main content text */
+    
+    /* Code Colors */
+    --code-bg: rgb(213, 214, 221) !important;      /* #d5d6dd - Inline code background */
+    --code-block-bg: rgb(220, 221, 228) !important; /* #dcdde4 - Code block background */
+    
+    /* UI Elements */
+    --border: rgb(200, 201, 207) !important;       /* #c8c9cf - Borders and dividers */
+    
+    /* Link and Accent Colors - Tokyo Night Light variants */
+    --link-color: rgb(41, 89, 170);     /* #2959aa - Links (blue) */
+    --link-hover: rgb(15, 75, 110);     /* #0f4b6e - Link hover (darker blue) */
+    
+    /* Additional Tokyo Night Light Accent Colors */
+    --tn-purple: rgb(90, 62, 142);      /* #5a3e8e - Purple accent */
+    --tn-cyan: rgb(15, 75, 110);        /* #0f4b6e - Cyan accent */
+    --tn-green: rgb(56, 95, 13);        /* #385f0d - Green accent */
+    --tn-yellow: rgb(143, 94, 21);      /* #8f5e15 - Yellow accent */
+    --tn-orange: rgb(150, 80, 39);      /* #965027 - Orange accent */
+    --tn-red: rgb(140, 67, 81);         /* #8c4351 - Red accent */
+    --tn-teal: rgb(51, 99, 92);         /* #33635c - Teal accent */
+    
+    /* Selection color for light mode */
+    --selection-bg: rgb(185, 192, 224);  /* #b9c0e0 - Text selection */
+    --selection-fg: rgb(52, 59, 88);     /* #343b58 - Selection text */
+}
+
+/* ==========================================
+ * CUSTOM ELEMENT STYLING
+ * ========================================== */
+
+/* Blockquotes with accent color */
+blockquote {
+    border-left-color: var(--tn-purple);
+}
+
+/* Tables */
+table {
+    border-color: var(--border);
+}
+
+th {
+    background: var(--entry);
+    color: var(--primary);
+}
+
+td {
+    border-color: var(--border);
+}
+
+/* Horizontal rules */
+hr {
+    background: var(--border);
+    border-color: var(--border);
+}
+
+/* Tag/badge colors */
+.tag,
+.tags a {
+    background: var(--entry);
+    color: var(--tn-cyan);
+    border-color: var(--border);
+}
+
+.tag:hover,
+.tags a:hover {
+    background: var(--tertiary);
+    color: var(--tn-purple);
+}
+
+/* Post meta information */
+.post-meta {
+    color: var(--secondary);
+}
+
+.post-meta a {
+    color: var(--tn-cyan);
+}
+
+.post-meta a:hover {
+    color: var(--tn-purple);
+}
+
+/* Archive/list styling */
+.archive-entry {
+    border-color: var(--border);
+}
+
+.archive-entry:hover {
+    border-color: var(--tn-purple);
+}
+
+/* Search styling */
+#searchInput {
+    background: var(--entry);
+    color: var(--primary);
+    border-color: var(--border);
+}
+
+#searchResults li:hover {
+    background: var(--entry);
+}
+
+/* Scrollbar styling with Tokyo Night colors */
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--tn-purple);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme);
+}
+
+/* Footer styling */
+footer {
+    border-top-color: var(--border);
+}
+
+/* Breadcrumbs */
+.breadcrumbs a {
+    color: var(--tn-cyan);
+}
+
+.breadcrumbs a:hover {
+    color: var(--tn-purple);
+}
+
+/* Social icons with Tokyo Night accents */
+.social-icons a:hover {
+    color: var(--tn-purple);
+}
+
+/* HackTheBox icon - green on hover */
+.social-icons a[aria-label*="hackthebox" i]:hover,
+.social-icons a[href*="hackthebox" i]:hover {
+    color: var(--tn-green) !important;
+}
+
+/* Navigation menu */
+.menu a:hover {
+    color: var(--tn-purple);
+}
+
+/* ==========================================
+ * SYNTAX HIGHLIGHTING TWEAKS
+ * ========================================== */
+
+/* Enhance code blocks with Tokyo Night colors */
+pre {
+    background: var(--code-block-bg);
+    border: 1px solid var(--border);
+}
+
+/* Copy button for code blocks */
+.copy-button {
+    color: var(--secondary);
+}
+
+.copy-button:hover {
+    color: var(--tn-purple);
+}
+
+/* ==========================================
+ * RESPONSIVE ADJUSTMENTS
+ * ========================================== */
+
+@media (max-width: 768px) {
+    /* Ensure colors remain consistent on mobile */
+    :root {
+        --theme: rgb(26, 27, 38);
+        --entry: rgb(36, 40, 59);
+    }
+    
+    :root[data-theme="light"] {
+        --theme: rgb(230, 231, 237);
+        --entry: rgb(213, 214, 221);
+    }
+}
+
+/* ==========================================
+ * PRINT STYLES
+ * ========================================== */
+
+@media print {
+    /* Use light colors for printing */
+    :root {
+        --theme: rgb(255, 255, 255);
+        --primary: rgb(0, 0, 0);
+        --content: rgb(0, 0, 0);
+    }
+}

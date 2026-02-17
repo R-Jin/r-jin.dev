@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on R-Jin</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on R-Jin</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 17 Feb 2026 11:00:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Tue, 17 Feb 2026 11:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Tue, 17 Feb 2026 11:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/tags/tutorial/</link>
+      <pubDate>Tue, 17 Feb 2026 11:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Development</title>
+      <link>http://localhost:1313/tags/web-development/</link>
+      <pubDate>Tue, 17 Feb 2026 11:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/web-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/tags/introduction/</link>
+      <pubDate>Tue, 17 Feb 2026 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Welcome</title>
+      <link>http://localhost:1313/tags/welcome/</link>
+      <pubDate>Tue, 17 Feb 2026 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/welcome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>http://localhost:1313/tags/networking/</link>
+      <pubDate>Sun, 15 Feb 2026 14:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Packet-Analysis</title>
+      <link>http://localhost:1313/tags/packet-analysis/</link>
+      <pubDate>Sun, 15 Feb 2026 14:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/packet-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sun, 15 Feb 2026 14:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Easy</title>
+      <link>http://localhost:1313/tags/easy/</link>
+      <pubDate>Thu, 12 Feb 2026 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/easy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jenkins</title>
+      <link>http://localhost:1313/tags/jenkins/</link>
+      <pubDate>Thu, 12 Feb 2026 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Privilege-Escalation</title>
+      <link>http://localhost:1313/tags/privilege-escalation/</link>
+      <pubDate>Thu, 12 Feb 2026 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/privilege-escalation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tryhackme</title>
+      <link>http://localhost:1313/tags/tryhackme/</link>
+      <pubDate>Thu, 12 Feb 2026 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/tryhackme/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/tags/windows/</link>
+      <pubDate>Thu, 12 Feb 2026 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Credential-Harvesting</title>
+      <link>http://localhost:1313/tags/credential-harvesting/</link>
+      <pubDate>Tue, 10 Feb 2026 16:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/credential-harvesting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hackthebox</title>
+      <link>http://localhost:1313/tags/hackthebox/</link>
+      <pubDate>Tue, 10 Feb 2026 16:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/hackthebox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Tue, 10 Feb 2026 16:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>http://localhost:1313/tags/web/</link>
+      <pubDate>Tue, 10 Feb 2026 16:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/tags/web/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
