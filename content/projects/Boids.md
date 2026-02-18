@@ -56,7 +56,3 @@ git clone https://github.com/R-Jin/Boids.git
 cd Boids
 python main.py
 ````
-
-## Lessons Learned
-
-What did you learn building this project?
