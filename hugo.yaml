@@ -76,7 +76,13 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: |
+      Welcome to my personal page! 
+      <br><br>
+      If you are new here, check out the [About Me](/about/) page.
+      <br><br>
+      \- Ryan Jin
+
 
   socialIcons:
     - name: github
