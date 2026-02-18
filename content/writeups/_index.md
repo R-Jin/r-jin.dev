@@ -1,6 +1,6 @@
 ---
-title: CTF Writeups
-description: Collection of my CTF challenge writeups.
+title: Writeups
+description: Collection of writeups.
 ---
 
 
