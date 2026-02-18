@@ -1,3 +1,3 @@
-Welcome to my personal blog!
+Welcome to my personal site!
 
 Check it out @ [r-jin.dev](r-jin.dev)
