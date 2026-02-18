@@ -315,6 +315,23 @@ pre {
 }
 
 /* ==========================================
+ * PAGINATION STYLING
+ * ========================================== */
+
+/* Pagination buttons (next/prev page) */
+.pagination a {
+    background: var(--entry);
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+.pagination a:hover {
+    background: var(--border);
+    color: var(--tn-purple);
+    border-color: var(--tn-purple);
+}
+
+/* ==========================================
  * IMAGE CENTERING
  * ========================================== */
 
