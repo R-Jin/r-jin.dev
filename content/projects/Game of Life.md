@@ -8,7 +8,7 @@ categories:
 - Project
 description: John Conway's cellular automaton
 showToc: true
-TocOpen: true
+TocOpen: false
 cover:
   image: /images/gol.gif
   alt: game of life
