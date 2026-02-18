@@ -8,7 +8,7 @@ tags:
 categories:
 - Blog
 author: Ryan Jin
-description: Here I will go over how I use Obsidian and Hugo to create my blog posts.
+description: Using Obsidian and Hugo to create blog posts seamlessly.
 showToc: true
 TocOpen: false
 ShowReadingTime: true
