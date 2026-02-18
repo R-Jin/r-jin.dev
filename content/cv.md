@@ -6,6 +6,8 @@ ShowBreadCrumbs: false
 ShowReadingTime: false
 ShowShareButtons: false
 ShowPostNavLinks: false
+showToc: true
+TocOpen: false
 ---
 
 ## Education
