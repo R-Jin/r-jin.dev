@@ -12,7 +12,7 @@ TocOpen: true
 cover:
   image: /images/gol.gif
   alt: game of life
-  caption: Simulation of game of life
+  caption: Simulation of Game of Life
   hiddenInSingle: false
 ---
 
