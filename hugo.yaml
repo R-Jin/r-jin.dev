@@ -41,6 +41,9 @@ params:
   showtoc: false
   tocopen: false
 
+  # Math rendering with KaTeX (per-page activation)
+  math: true
+
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
@@ -144,6 +147,23 @@ menu:
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+          - - $
+            - $
+        enable: true
   highlight:
     noClasses: false
     # anchorLineNos: true

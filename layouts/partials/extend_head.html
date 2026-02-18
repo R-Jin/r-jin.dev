@@ -1,0 +1,4 @@
+{{- /* Math rendering support */ -}}
+{{- if or .Params.math (and (not (isset .Params "math")) .Site.Params.math) -}}
+  {{- partial "math.html" . -}}
+{{- end -}}
