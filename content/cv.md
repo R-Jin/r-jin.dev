@@ -7,7 +7,7 @@ ShowReadingTime: false
 ShowShareButtons: false
 ShowPostNavLinks: false
 showToc: true
-TocOpen: false
+TocOpen: true
 ---
 
 ## Education
