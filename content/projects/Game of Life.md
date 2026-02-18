@@ -35,6 +35,14 @@ These rules are applied to each cell on the grid in a repetitive manner, and the
 
 ## Installation
 
+Need pygame installed:
+
+````bash
+pip install pygame
+````
+
+Clone the repo:
+
 ````bash
 # Installation instructions
 git clone https://github.com/R-Jin/Game-of-Life.git
@@ -44,6 +52,7 @@ git clone https://github.com/R-Jin/Game-of-Life.git
 
 ````bash
 # Usage examples
+cd Game-of-Life
 python main.py
 ````
 
