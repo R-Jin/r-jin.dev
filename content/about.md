@@ -14,7 +14,7 @@ Welcome to my corner of the internet! I'm an aspiring cybersecurity enthusiast a
 ### What I Do
 
 * **Cybersecurity**: Penetration testing, vulnerability research, and security tool development
-* **CTF Competitions**: Active participant on HackTheBox and other CTF platforms
+* **CTF**: Participant on HackTheBox and other CTF platforms
 * **Software Development**: Building tools and applications.
 * **Continuous Learning**: Always exploring new technologies and methodologies
 
