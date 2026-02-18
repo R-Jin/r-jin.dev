@@ -9,12 +9,12 @@ ShowPostNavLinks: false
 
 # Hi, I'm Ryan Jin
 
-Welcome to my corner of the internet! I'm a cybersecurity enthusiast and developer.
+Welcome to my corner of the internet! I'm an aspiring cybersecurity enthusiast and developer.
 
 ### What I Do
 
 * **Cybersecurity**: Penetration testing, vulnerability research, and security tool development
-* **CTF Competitions**: Active participant on HackTheBox, TryHackMe, and other CTF platforms
+* **CTF Competitions**: Active participant on HackTheBox and other CTF platforms
 * **Software Development**: Building tools and applications.
 * **Continuous Learning**: Always exploring new technologies and methodologies
 
@@ -25,7 +25,6 @@ This blog is where I share:
 * Technical writeups from CTF challenges
 * Programming tutorials and insights
 * Project showcases
-* Thoughts on cybersecurity trends
 
 ## Get in Touch
 

@@ -7,6 +7,7 @@ categories: []
 description: ""
 showToc: true
 TocOpen: false
+math: false
 ---
 
 ## Challenge Information

@@ -12,6 +12,7 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: true
+math: false
 ---
 
 Write your blog post content here.

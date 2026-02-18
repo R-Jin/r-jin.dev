@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-description: Ryan Jin - Cybersecurity Professional & Developer
+description: Ryan Jin - Software Developer & Aspiring Cybersecurity Professional
 hidemeta: true
 ShowBreadCrumbs: false
 ShowReadingTime: false
@@ -8,69 +8,56 @@ ShowShareButtons: false
 ShowPostNavLinks: false
 ---
 
-<div style="text-align: center; margin: 2em 0;">
-  <a href="/cv/ryan-jin-cv.pdf" download style="display: inline-block; padding: 12px 24px; background-color: #1e90ff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-    📄 Download CV (PDF)
-  </a>
-</div>
-
----
-
 ## Education
 
 ### Chalmers University of Technology
 
-**Computer science – algorithms, languages and logic, MSc** | Expected Graduation: June 2026
+**Computer science – algorithms, languages and logic, MSc** | Graduation: June 2026
 
-* Relevant Coursework: TODO
-  **Computer Science and Computer Engineering, BSc** | Graduation: June 2024
-* Relevant Coursework: TODO
+**Computer Science and Computer Engineering, BSc** | Graduation: June 2024
 
 ### University of Minnesota
 
 **Exchange program** | Duration: January 2025 - May 2025
 
-* Coursework:
+---
 
 ## Work Experience
 
-### \[Company Name\] | \[Job Title\]
+### Volvo Group Trucks | Embedded Software Engineer
 
-**Duration:** \[Month Year\] - Present
+**Duration:**  June 2025 - August 2025
 
-* Led security assessments and penetration testing for web applications
-* Developed automated security tools using Python and Bash
-* Collaborated with development teams to implement security best practices
-* Identified and reported critical vulnerabilities in production systems
+* Developed algorithm to detect different current levels for fuel injectors and wrote tests to check the current levels to ensure reliability in the fuel injectors using **Python** and **Robot Framework**.
+* Wrote and integrated a maximum CPU load test into **Jenkins** pipeline using **Python** and **Groovy** scripting that pulls data from **ElasticSearch** database, enabling developers to detect abnormally high CPU load increases between each change.
 
-### \[Previous Company\] | \[Previous Role\]
+---
 
-**Duration:** \[Month Year\] - \[Month Year\]
+### Hasselblad | Production Operator
 
-* Conducted vulnerability assessments and security audits
-* Implemented security monitoring and incident response procedures
-* Created technical documentation and security guidelines
+**Duration:**  June 2023 - August 2024
+
+* Debugged and troubleshoot **Python** and **Matlab** scripts that were used for the camera lens test benches.
+* Handle various issues with different camera models. Troubleshooting problems and repairing the damaged cameras.
+* Help assemble multiple camera models and test them to ensure that each camera meets quality standards before shipment to the end-user.
+
+---
+
+### Hello World! | Programming Instructor
+
+**Duration:**  June 2022 - November 2023
+
+* Teaching and introducing children and youth to programming and digital creation.
+* Primarily taught **Python** and game development with **Lua**.
+
+---
 
 ## Technical Skills
 
-* **Programming Languages:** Python, JavaScript, Bash, C++, Go
-* **Cybersecurity:** Penetration Testing, Vulnerability Assessment, OSINT, Web Application Security
-* **Tools & Frameworks:** Burp Suite, Metasploit, Nmap, Wireshark, Docker, Git
-* **Operating Systems:** Linux (Kali, Ubuntu), Windows
-* **Platforms:** HackTheBox, TryHackMe, CTFtime
+* **Programming Languages:** Python, Typescript, Bash, C/C++, SQL, Haskell
+* **Operating Systems:** Linux (Ubuntu, Arch), Windows
 
-## Notable Projects
-
-* [Security Scanner Tool](/projects/) - Automated vulnerability scanner for web applications
-* [CTF Toolkit](/projects/) - Collection of scripts and tools for CTF competitions
-* [Network Monitor](/projects/) - Real-time network traffic analyzer
-
-## Certifications & Achievements
-
-* HackTheBox: \[Rank/Achievement\]
-* TryHackMe: \[Rank/Achievement\]
-* \[Certification Name\] (Year)
-* \[Other Relevant Certifications\]
+---
 
 ## Contact Information
 
