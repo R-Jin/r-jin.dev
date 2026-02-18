@@ -1,6 +1,6 @@
 ---
 title: OverTheWire (OTW)
-description: Collection of my CTF challenge writeups.
+description: Here you'll find writeups on CTFs from OTW.
 ---
 
 
