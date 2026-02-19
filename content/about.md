@@ -13,8 +13,7 @@ Welcome to my corner of the internet! I'm an aspiring cybersecurity enthusiast a
 
 ### What I Do
 
-* **Cybersecurity**: Penetration testing, vulnerability research, and security tool development
-* **CTF**: Participant on HackTheBox and other CTF platforms
+* **Cybersecurity**: Studying for Certs, Doing CTFs, HTB Academy
 * **Software Development**: Building tools and applications.
 * **Continuous Learning**: Always exploring new technologies and methodologies
 
@@ -24,7 +23,7 @@ Welcome to my corner of the internet! I'm an aspiring cybersecurity enthusiast a
 
 This blog is where I share:
 
-* Technical writeups from CTF challenges
+* Technical writeups from CTFs and HTB Labs
 * Programming tutorials and insights
 * Project showcases
 
