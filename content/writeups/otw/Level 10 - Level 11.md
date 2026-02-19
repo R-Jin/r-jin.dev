@@ -28,7 +28,7 @@ The password for the next level is stored in the file **data.txt**, which contai
 SSH into machine on port 2220 with password from previous level.
 
 ````bash
-ssh -p 2220 bandit9@bandit.labs.overthewire.org
+ssh -p 2220 bandit10@bandit.labs.overthewire.org
 ````
 
 File is base64 encoded so we need to decode it using `base64 -d` command.

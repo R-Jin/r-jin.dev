@@ -1,6 +1,6 @@
 ---
 title: Level 11 - Level 12
-date: 2026-02-16T14:31:06+01:00
+date: 2026-02-16T15:31:06+01:00
 draft: false
 tags:
 - OTW
@@ -28,7 +28,7 @@ The password for the next level is stored in the file **data.txt**, where all lo
 SSH into machine on port 2220 with password from previous level.
 
 ````bash
-ssh -p 2220 bandit9@bandit.labs.overthewire.org
+ssh -p 2220 bandit11@bandit.labs.overthewire.org
 ````
 
 For this we can use the `tr` command to translate each character by 13 positions. Like so `'A-Za-z' 'N-ZA-Mn-za-m'`. This translates `'A'` to `'N'` and so on.
