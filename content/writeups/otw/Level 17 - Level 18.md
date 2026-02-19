@@ -33,10 +33,19 @@ SSH into machine on port 2220 with credentials from previous level.
 ssh -p 2220 -i ./<credentials> bandit17@bandit.labs.overthewire.org
 ````
 
+Use `diff` to see the lines that differ.
+
+````bash
+diff passwords.new passwords.old
+````
+
+![Pasted image 20260219192147.png](/images/Pasted%20image%2020260219192147.png)
+
 ## Lessons Learned
 
-* 
+* How to get difference between lines in two files using `diff`
 
 ## Tools Used
 
 * `ssh`
+* `diff`
