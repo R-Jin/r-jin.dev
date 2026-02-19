@@ -41,10 +41,10 @@ nmap -p30001 localhost
 
 ![Pasted image 20260219184019.png](/images/Pasted%20image%2020260219184019.png)
 
-It is open so now we can try to connect to it using using SSL/TLS encryption. This can be done with `openssl s_client` command.
+It is open so now we can try to connect to it using using SSL/TLS encryption. This can be done with `openssl s_client` command. Use the `-ign_eof` flag to treat input as pure data and not perform a local function such as KEYUPDATE.
 
 ````bash
-openssl s_client localhost:30001
+openssl s_client -ign_eof localhost:30001
 ````
 
 There will be a lot of output but at the bottom you will see `read R BLOCK`. Here input the password to get the next levels password.
@@ -53,7 +53,7 @@ There will be a lot of output but at the bottom you will see `read R BLOCK`. Her
 
 ## Lessons Learned
 
-* Use `openssl s_client` to connect using SSL/TLS encryption.
+* Use `openssl s_client` to connect using SSL/TLS encryption with `-ign_eof` flag.
 
 ## Tools Used
 
