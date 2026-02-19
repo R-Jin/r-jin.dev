@@ -48,9 +48,7 @@ Now we can open up another terminal and run the binary on port 4000.
 Now go back to the first window and paste in the password.
 Now the window running the binary should read it and send the next password.
 
-![Pasted image 20260219220458.png](/images/Pasted%20image%2020260219220458.png)
-
-![Pasted image 20260219220525.png](/images/Pasted%20image%2020260219220525.png)
+![otw level 20.gif](/images/otw%20level%2020.gif)
 
 ## Lessons Learned
 
