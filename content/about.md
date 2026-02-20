@@ -13,7 +13,7 @@ Welcome to my corner of the internet! I'm an aspiring cybersecurity enthusiast a
 
 ### What I Do
 
-* **Cybersecurity**: Studying for Certs, Doing CTFs, HTB Academy
+* **Cybersecurity**: Studying for [CJCA](https://academy.hackthebox.com/exams/7/) and Security+, Doing CTFs, HTB Academy
 * **Software Development**: Building tools and applications.
 * **Continuous Learning**: Always exploring new technologies and methodologies
 
