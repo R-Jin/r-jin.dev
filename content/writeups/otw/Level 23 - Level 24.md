@@ -81,7 +81,7 @@ Copy it to directory `/var/spool/bandit24/foo/`.
 cp pass_retrieve.sh /var/spool/bandit24/foo/
 ````
 
-Now wait for 1 minute since the cron job runs every minute and then `cat` password.
+Now wait for 1 minute (the cron job runs every minute) and then `cat` password.
 
 ````bash
 cat /tmp/bandit24.pass
