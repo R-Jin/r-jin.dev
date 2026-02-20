@@ -57,7 +57,7 @@ This script removes all files in the directory `/var/spool/<username of the runn
 
 So we can to add a script to the directory `/var/spool/bandit24/foo/`. Since it is user bandit24 that is gonna execute this script it will also have access to the password to level 24. The script should copy over the password of bandit24 to a public directory such as `tmp`.
 
-Begin by generating a temporary directory using `mktemp -d`. Save the following script under the temporary directory as `pass_retrieve.sh`.
+Begin by generating a temporary directory using `mktemp -d`. Save the following script under the temporary directory with filename `pass_retrieve.sh`.
 
 ````bash
 !/bin/bash
