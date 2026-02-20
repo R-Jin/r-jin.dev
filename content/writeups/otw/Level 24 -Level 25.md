@@ -75,3 +75,4 @@ Then we can pipe this to the `nc` connection and then `grep` on all lines that d
 * `nc`
 * `printf`
 * `grep`
+* `chmod`
