@@ -31,17 +31,14 @@ SSH into machine on port 2220 with password from previous level.
 ssh -p 2220 bandit3@bandit.labs.overthewire.org
 ````
 
-Use `cat` command. Since filename contains spaces we need to escape them using `\ `
-
-````bash
-cat ./--spaces\ in\ this\ filename--
-````
+Use `ls -a` to show all files even hidden ones. Then cat it.
 
 ## Lessons Learned
 
-* Using `cat` on filename with spaces.
+* Using `ls -a`
 
 ## Tools Used
 
 * `ssh`
 * `cat`
+* `ls`
