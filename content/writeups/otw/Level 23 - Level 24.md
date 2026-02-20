@@ -55,7 +55,7 @@ cat /usr/bin/cronjob_bandit24.sh
 
 This script removes all files in the directory `/var/spool/<username of the running user>/foo/`. However if the owner of the file is `bandit23` it also runs that file for 60 seconds and then kills the process running that file before deleting that file.
 
-So we need to add a script to the directory `/var/spool/bandit24/foo/` since it is the user bandit24 that is gonna execute this script. This script should copy over the password of bandit24 to a public directory such as `tmp`.
+So we can to add a script to the directory `/var/spool/bandit24/foo/`. Since it is user bandit24 that is gonna execute this script it will also have access to the password to level 24. The script should copy over the password of bandit24 to a public directory such as `tmp`.
 
 Begin by generating a temporary directory using `mktemp -d`. Save the following script under the temporary directory as `pass_retrieve.sh`.
 
