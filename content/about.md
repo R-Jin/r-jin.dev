@@ -7,7 +7,7 @@ ShowShareButtons: false
 ShowPostNavLinks: false
 ---
 
-## Hi, I'm Ryan Jin
+## Hi, I'm Ryan Jin •ᴗ•
 
 Welcome to my corner of the internet! I'm an aspiring cybersecurity enthusiast and developer.
 
