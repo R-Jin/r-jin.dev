@@ -45,7 +45,7 @@ In the regular shell we can do a `ls -la` to see what is in this host.
 
 ![Pasted image 20260221004220.png](/images/Pasted%20image%2020260221004220.png)
 
-We see that the `uppershell` is owned by `bandit33` with the `SUID` permission active. This means that anyone of executes this program will do it under user that owns this file in this case `bandit33`. This also probably means that we are user `bandit33` based on the previous uppercase shell we got put into when logging in to the machine. We can confirm this by running `whoami`.
+We see that the `uppershell` is owned by `bandit33` with the `SUID` permission active. This means that anyone who executes this program will do it under the user that owns this file, in this case `bandit33`. This also probably means that we are user `bandit33` based on the previous uppercase shell we got put into when logging in to the machine. We can confirm this by running `whoami`.
 
 ![Pasted image 20260221004639.png](/images/Pasted%20image%2020260221004639.png)
 
