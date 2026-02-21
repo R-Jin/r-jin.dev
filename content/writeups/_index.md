@@ -1,5 +1,5 @@
 ---
-title: Writeups 🗁
+title: Writeups 🖥
 description: Collection of writeups.
 ---
 
