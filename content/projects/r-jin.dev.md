@@ -38,4 +38,4 @@ I type my notes in Obsidian using markdown. I press a hotkey and all my files sy
 
 This is done with an Obsidian plugin called **[obsidian-shellcommands](https://github.com/Taitava/obsidian-shellcommands)** that can call bash scripts using a hotkey. Then I have another hotkey set to automatically commit and push to my GitHub which is tracked by my hosting provider Netlify. Netlify builds the Hugo site whenever it detects a change on my GitHub repo.
 
-making some changes...
+![sync.gif](/images/sync.gif)
