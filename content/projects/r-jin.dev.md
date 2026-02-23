@@ -24,7 +24,7 @@ This is my personal blog where I share:
 * Programming tutorials and insights
 * Project showcases
 
-Since I am a heavy user of the Obsidian notetaking app the goal was to make it sync with my Hugo project with only hotkeys.
+Since I am a heavy user of the Obsidian notetaking app the goal was to make it sync with my Hugo project with hotkeys within obsidian so I don't have to leave the program to publish the posts.
 
 ## Tech Stack
 
