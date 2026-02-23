@@ -2,7 +2,8 @@
 title: Boids
 date: 2022-08-27T21:39:17+01:00
 draft: false
-tags: []
+tags:
+- Python
 categories:
 - Project
 description: Flocking behavior in Python

@@ -29,12 +29,6 @@ To add a little inspiration to your day, One-Page also features a random quote t
 * [Quotable API](https://github.com/lukePeavey/quotable)
 * fetch API
 
-## Features
-
-* Feature1
-* Feature2
-* Feature3
-
 ## Links
 
 * **Repository:** [GitHub](https://github.com/R-Jin/One-page)
