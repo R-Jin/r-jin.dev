@@ -8,7 +8,7 @@ tags:
 - Web
 categories:
 - Project
-description: My personal page
+description: The current page :D
 showToc: true
 TocOpen: false
 cover:
