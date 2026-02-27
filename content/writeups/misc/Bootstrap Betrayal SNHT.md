@@ -1,7 +1,7 @@
 ---
 title: Bootstrap Betrayal (SNHT Qualifier)
 date: 2026-02-25T00:50:45+01:00
-draft: true
+draft: false
 tags:
 - ctf
 - web

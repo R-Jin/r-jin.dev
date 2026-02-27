@@ -1,7 +1,7 @@
 ---
 title: I have lost my package
 date: 2026-02-25T11:15:57+01:00
-draft: true
+draft: false
 tags:
 - prompt injection
 - snht
