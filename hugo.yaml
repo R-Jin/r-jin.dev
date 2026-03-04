@@ -16,7 +16,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: R-Jin
-  description: "ExampleSite description"
+  description: "Welcome to my personal blog where I share my thoughts on programming, cybersecurity, and my journey in the tech world."
   keywords: [Blog, Portfolio, Personal, Cybersecurity, Programming]
   author: Ryan Jin
   # author: ["Me", "You"] # multiple authors
