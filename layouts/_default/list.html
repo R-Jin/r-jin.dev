@@ -51,6 +51,10 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
+{{- if and .IsHome (eq $paginator.PageNumber 1) }}
+<h2 class="home-section-header">Recent Writeups and Posts</h2>
+{{- end }}
+
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
 

@@ -315,6 +315,19 @@ pre {
 }
 
 /* ==========================================
+ * HOME SECTION HEADER
+ * ========================================== */
+
+.home-section-header {
+    font-size: 1.7rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin: 3.5rem 0 1.5rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 40%, transparent);
+}
+
+/* ==========================================
  * PAGINATION STYLING
  * ========================================== */
 
@@ -329,6 +342,15 @@ pre {
     background: var(--border);
     color: var(--tn-purple);
     border-color: var(--tn-purple);
+}
+
+/* ==========================================
+ * POST CARD HOVER
+ * ========================================== */
+
+.post-entry:hover,
+.first-entry:not(.home-info):hover {
+    border-color: color-mix(in srgb, var(--tn-purple) 50%, transparent);
 }
 
 /* ==========================================
