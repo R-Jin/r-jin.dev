@@ -1,5 +1,5 @@
 ---
-title: Sequel
+title: Sequel (HTB)
 date: 2026-03-06T00:56:14+01:00
 draft: false
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Level 23 - Level 24
+title: Level 23 - Level 24 (OTW)
 date: 2026-02-20T10:04:11+01:00
 draft: false
 tags:
