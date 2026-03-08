@@ -89,13 +89,7 @@
   </div>
   {{- end }}
   {{- if not (.Param "hideMeta") }}
-  {{- if .IsSection }}
-  {{- if .Description }}
-  <footer class="entry-footer">
-    <span>{{ .Description }}</span>
-  </footer>
-  {{- end }}
-  {{- else }}
+  {{- if not .IsSection }}
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
   </footer>
